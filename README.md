@@ -1,2 +1,2 @@
 # Tele-dentistry
-This project aims to develop a website that introduces teledentistry to bridge the gap in oral healthcare access. 
+This project aims to develop a website that introduces teledentistry to bridge the gap in oral healthcare access. The platform anticipates to provide a map-based tracking system to visualize outreach efforts, a secure patient profile feature for remote consultations, and a streamlined data entry process to improve efficiency and accuracy. By enabling remote collaboration and digital record-keeping, the website will enhance the effectiveness of oral health programs and streamline work of health professionals through teledentistry.

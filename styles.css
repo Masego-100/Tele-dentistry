@@ -1,0 +1,10 @@
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.stats-card {
+backdrop-filter: blur(8px);
+background: rgba(255, 255, 255, 0.9);
+}
+.map-container {
+background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png');
+background-position: center;
+background-size: cover;
+}

@@ -6,6 +6,7 @@
     <title>Teledentistry</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>tailwind.config={theme:{extend:{colors:{primary:'#15B8A6',secondary:'#FF6B6B'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    
 
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -41,115 +42,115 @@
         <h1 class="text-5xl font-bold text-gray-900 mb-6">Bringing Smiles to Every Child</h1>
         <p class="text-xl text-gray-700 mb-8">Providing free dental care and education to children in underserved communities through innovative teledentistry solutions.</p>
         <div class="flex space-x-4">
-        <button class="bg-primary text-white px-8 py-3 !rounded-button text-lg cursor-pointer whitespace-nowrap">Get Started</button>
-        <button class="bg-white border-2 border-primary text-primary px-8 py-3 !rounded-button text-lg cursor-pointer whitespace-nowrap">Learn More</button>
+      
         </div>
         </div>
         </div>
         </section>
         <section id="about" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-16">About SmileReach</h2>
+        <h2 class="text-3xl font-bold text-center mb-16">About Smile Connect</h2>
         <div class="grid grid-cols-2 gap-12 items-center">
         <div class="space-y-6">
         <p class="text-lg text-gray-700 leading-relaxed">SmileReach was founded in 2020 with a simple yet powerful mission: to bring quality dental care to every child, regardless of their location or economic status. Through innovative teledentistry solutions, we've been breaking down barriers that traditionally prevented access to dental healthcare.</p>
         <p class="text-lg text-gray-700 leading-relaxed">Our program combines cutting-edge technology with compassionate care, enabling us to reach children in remote and underserved communities. We believe that every smile matters, and early dental education and intervention can significantly impact a child's overall health and confidence.</p>
-        <div class="grid grid-cols-3 gap-4 mt-8">
-        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
-        <div class="text-2xl font-bold text-primary mb-2">5000+</div>
-        <div class="text-gray-600">Children Served</div>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
-        <div class="text-2xl font-bold text-primary mb-2">100+</div>
-        <div class="text-gray-600">Communities</div>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-sm text-center">
-        <div class="text-2xl font-bold text-primary mb-2">98%</div>
-        <div class="text-gray-600">Success Rate</div>
-        </div>
-        </div>
         </div>
         <div class="relative">
-        <img src="https://readdy.ai/api/search-image?query=diverse group of dental professionals and children in a modern clinic setting, warm lighting, caring atmosphere, professional equipment visible in background, natural and candid interaction&width=600&height=800&seq=10&orientation=portrait&flag=5f8b8c678192cf2ad5e54297779ea942" alt="About SmileReach" class="rounded-lg shadow-lg">
+        <img src="images/teledentistry1.webp" alt="About SmileReach" class="rounded-lg shadow-lg">
         <div class="absolute -bottom-6 -right-6 bg-primary text-white p-4 rounded-lg">
-        <p class="text-lg font-semibold">Est. 2020</p>
+        <p class="text-lg font-semibold">Est. 2025</p>
         </div>
         </div>
         </div>
         </div>
         </section>
+
         <section id="education" class="py-20">
-        <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-16">Educational Resources</h2>
-        <div class="grid grid-cols-3 gap-8">
-        <div class="bg-white rounded-lg shadow-lg p-6">
-        <div class="w-12 h-12 flex items-center justify-center mb-4">
-        <i class="ri-video-line text-3xl text-primary"></i>
-        </div>
-        <h3 class="text-xl font-semibold mb-4">Video Tutorials</h3>
-        <p class="text-gray-600">Learn proper brushing techniques and oral care tips through our engaging video content.</p>
-        </div>
-        <div class="bg-white rounded-lg shadow-lg p-6">
-        <div class="w-12 h-12 flex items-center justify-center mb-4">
-        <i class="ri-book-open-line text-3xl text-primary"></i>
-        </div>
-        <h3 class="text-xl font-semibold mb-4">Interactive Guides</h3>
-        <p class="text-gray-600">Step-by-step guides for maintaining good oral hygiene and preventing dental issues.</p>
-        </div>
-        <div class="bg-white rounded-lg shadow-lg p-6">
-        <div class="w-12 h-12 flex items-center justify-center mb-4">
-        <i class="ri-questionnaire-line text-3xl text-primary"></i>
-        </div>
-        <h3 class="text-xl font-semibold mb-4">Fun Quizzes</h3>
-        <p class="text-gray-600">Test your knowledge and learn more about dental health through interactive quizzes.</p>
-        </div>
-        </div>
-        <div class="mt-12 bg-white rounded-lg shadow-lg p-6">
-        <div class="flex items-center justify-between mb-6">
-        <h3 class="text-xl font-semibold">Chat with SmileBot</h3>
-        <button id="toggleChat" class="text-primary hover:text-primary/80">
-        <i class="ri-chat-1-line text-2xl"></i>
-        </button>
-        </div>
-        <div id="chatContainer" class="hidden">
-        <div id="chatMessages" class="h-64 overflow-y-auto mb-4 p-4 border rounded-lg">
-        <div class="mb-4">
-        <div class="bg-gray-100 rounded-lg p-3 inline-block">
-        <p class="text-gray-700">Hi! I'm SmileBot. How can I help you learn about dental health today?</p>
-        </div>
-        </div>
-        </div>
-        <div class="flex space-x-2">
-        <input type="text" id="chatInput" class="flex-1 border rounded-lg px-4 py-2" placeholder="Type your question...">
-        <button onclick="sendMessage()" class="bg-primary text-white px-4 py-2 rounded-lg">Send</button>
-        </div>
-        </div>
-        </div>
-        <div class="bg-white rounded-lg shadow-lg p-6">
-        <div class="w-12 h-12 flex items-center justify-center mb-4">
-        <i class="ri-book-open-line text-3xl text-primary"></i>
-        </div>
-        <h3 class="text-xl font-semibold mb-4">Interactive Guides</h3>
-        <p class="text-gray-600">Step-by-step guides for maintaining good oral hygiene and preventing dental issues.</p>
-        </div>
-        <div class="bg-white rounded-lg shadow-lg p-6">
-        <div class="w-12 h-12 flex items-center justify-center mb-4">
-        <i class="ri-questionnaire-line text-3xl text-primary"></i>
-        </div>
-        <h3 class="text-xl font-semibold mb-4">Fun Quizzes</h3>
-        <p class="text-gray-600">Test your knowledge and learn more about dental health through interactive quizzes.</p>
-        </div>
-        </div>
-        </div>
-        </section>
+            <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Educational Resources</h2>
+            <div class="grid grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+            <div class="w-12 h-12 flex items-center justify-center mb-4">
+            <i class="ri-video-line text-3xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Video Tutorials</h3>
+            <p class="text-gray-600">Learn proper brushing techniques and oral care tips through our engaging video content.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6">
+            <div class="w-12 h-12 flex items-center justify-center mb-4">
+            <i class="ri-book-open-line text-3xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Interactive Guides</h3>
+            <p class="text-gray-600">Step-by-step guides for maintaining good oral hygiene and preventing dental issues.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6">
+            <div class="w-12 h-12 flex items-center justify-center mb-4">
+            <i class="ri-questionnaire-line text-3xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Fun Quizzes</h3>
+            <p class="text-gray-600">Test your knowledge and learn more about dental health through interactive quizzes.</p>
+            </div>
+            </div>
+           
+            
+            </div>
+            </div>
+            </section>
+       
         <section id="impact" class="py-20 bg-gray-50">
+            
         <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-16">Our Global Impact</h2>
-        <div class="grid grid-cols-2 gap-8 mb-12">
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-        <h3 class="text-xl font-semibold mb-4">Geographic Reach</h3>
-        <div class="map-container w-full h-96 rounded-lg overflow-hidden border-2 border-gray-200"></div>
-        </div>
+            
+            <h2 class="text-3xl font-bold text-center mb-16">Our Global Impact</h2>
+            <div class="grid grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Geographic Reach</h3>
+                    <div class="map-container w-full h-96 rounded-lg overflow-hidden border-2 border-gray-200">
+                        <div id="map" style="height: 100vh; width: 100%;"></div>
+                        <script>
+                            let map;
+                    
+                            function initMap() {
+                                map = new google.maps.Map(document.getElementById("map"), {
+                                    center: { lat: -26.2708, lng: 28.1123 }, // Centered in Gauteng
+                                    zoom: 7,
+                                });
+                    
+                                // Adding markers for specific schools with actual information
+                                addMarker({ lat: -26.2041, lng: 28.0473 }, "Suncrest High School", "10 children placed on treatment", "red", "images/oral_health_program.jpg");
+                                addMarker({ lat: -25.7479, lng: 28.2293 }, "Pretoria High School", "8 children diagnosed with cavities", "blue", "https://youtu.be/_sRW0OKA8Ks");
+                                addMarker({ lat: -27.8555, lng: 26.3774 }, "Kroonstad Secondary School", "5 children treated for tooth decay", "green", "https://youtu.be/_sRW0OKA8Ks");
+                                addMarker({ lat: -29.0852, lng: 26.1596 }, "Bloemfontein High School", "12 children placed on orthodontic treatment", "yellow", "https://youtu.be/_sRW0OKA8Ks");
+                            }
+                    
+                            function addMarker(location, schoolName, visitInfo, color, link) {
+                                const marker = new google.maps.Marker({
+                                    position: location,
+                                    map: map,
+                                    icon: {
+                                        url: `http://maps.google.com/mapfiles/ms/icons/${color}-dot.png`,
+                                    },
+                                });
+                    
+                                let contentString;
+                                if (link.includes("http")) {
+                                    contentString = `<strong>${schoolName}</strong><br>${visitInfo}<br><a href="${link}" target="_blank">Click here for more information</a>`;
+                                } else {
+                                    contentString = `<strong>${schoolName}</strong><br>${visitInfo}<br><img src="${link}" alt="${schoolName}" width="200">`;
+                                }
+                    
+                                const infoWindow = new google.maps.InfoWindow({ content: contentString });
+                    
+                                marker.addListener("click", () => {
+                                    infoWindow.open(map, marker);
+                                });
+                            }
+                        </script>
+                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnu99zZwlwPmaRdFvSF82ECLPBKmwpKgg&callback=initMap"></script>
+
+
+                    </div>
+                </div>
         <div class="bg-white p-6 rounded-lg shadow-lg">
         <h3 class="text-xl font-semibold mb-4">Impact Metrics</h3>
         <div id="impactChart" class="w-full h-96"></div>
@@ -175,443 +176,75 @@
         </div>
         </div>
         </section>
-        <section id="team" class="py-20">
-        <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-16">Meet the Team</h2>
-        <div class="grid grid-cols-4 gap-8">
-        <div class="text-center">
-        <img src="https://readdy.ai/api/search-image?query=professional headshot of a middle-aged female dentist with warm smile, white coat, natural lighting&width=300&height=300&seq=11&orientation=squarish&flag=e2074b04662efffd87e38d7fd74d4152" alt="Dr. Sarah Chen" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
-        <h3 class="text-xl font-semibold">Dr. Sarah Chen</h3>
-        <p class="text-gray-600">Founder & Lead Dentist</p>
-        </div>
-        <div class="text-center">
-        <img src="https://readdy.ai/api/search-image?query=professional headshot of a male dental specialist in his 40s, confident pose, white coat&width=300&height=300&seq=12&orientation=squarish&flag=23907d2ebf72b4d24a9e5bfbc3ae9d8a" alt="Dr. Michael Rodriguez" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
-        <h3 class="text-xl font-semibold">Dr. Michael Rodriguez</h3>
-        <p class="text-gray-600">Pediatric Specialist</p>
-        </div>
-        <div class="text-center">
-        <img src="https://readdy.ai/api/search-image?query=professional headshot of a young female dental hygienist, friendly smile, white uniform&width=300&height=300&seq=13&orientation=squarish&flag=1cb5e8cbcf41fe769a068db3da667f29" alt="Emma Thompson" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
-        <h3 class="text-xl font-semibold">Emma Thompson</h3>
-        <p class="text-gray-600">Lead Dental Hygienist</p>
-        </div>
-        <div class="text-center">
-        <img src="https://readdy.ai/api/search-image?query=professional headshot of a male technology specialist in his 30s, business casual attire&width=300&height=300&seq=14&orientation=squarish&flag=97e44389c618974c6d49613cf6c2f821" alt="David Park" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
-        <h3 class="text-xl font-semibold">David Park</h3>
-        <p class="text-gray-600">Technology Director</p>
-        </div>
-        </div>
-        <div class="grid grid-cols-3 gap-8">
-        <div class="bg-white rounded-lg shadow-lg p-6">
-        <div class="flex items-center mb-4">
-        <img src="https://readdy.ai/api/search-image?query=portrait of a happy smiling young girl with perfect teeth, natural lighting, genuine expression&width=64&height=64&seq=2&orientation=squarish&flag=9c8b80f90d6471c087e70e232c319302" class="w-12 h-12 rounded-full object-cover" alt="Sarah">
-        <div class="ml-4">
-        <h4 class="font-semibold">Sarah Thompson</h4>
-        <p class="text-gray-500 text-sm">Program Beneficiary</p>
-        </div>
-        </div>
-        <p class="text-gray-600">"The teledentistry program has made such a difference in my daughter's life. We live in a rural area and accessing dental care was always a challenge."</p>
-        </div>
-        <div class="bg-white rounded-lg shadow-lg p-6">
-        <div class="flex items-center mb-4">
-        <img src="https://readdy.ai/api/search-image?query=portrait of a professional male dentist in white coat, warm and friendly expression&width=64&height=64&seq=3&orientation=squarish&flag=eedaca630a7f17b3af7f8cc89e4787e3" class="w-12 h-12 rounded-full object-cover" alt="Dr. James">
-        <div class="ml-4">
-        <h4 class="font-semibold">Dr. James Wilson</h4>
-        <p class="text-gray-500 text-sm">Volunteer Dentist</p>
-        </div>
-        </div>
-        <p class="text-gray-600">"Being able to reach children in remote areas through teledentistry has been incredibly rewarding. We're making dental care accessible to all."</p>
-        </div>
-        <div class="bg-white rounded-lg shadow-lg p-6">
-        <div class="flex items-center mb-4">
-        <img src="https://readdy.ai/api/search-image?query=portrait of a middle-aged female teacher, professional appearance, warm smile&width=64&height=64&seq=4&orientation=squarish&flag=7130b154cef005b95600ffe611b44636" class="w-12 h-12 rounded-full object-cover" alt="Emily">
-        <div class="ml-4">
-        <h4 class="font-semibold">Emily Rodriguez</h4>
-        <p class="text-gray-500 text-sm">School Principal</p>
-        </div>
-        </div>
-        <p class="text-gray-600">"The impact of this program on our school community has been tremendous. Students are more confident and healthier."</p>
-        </div>
-        </div>
-        </div>
-        </section>
-        <section id="cta" class="py-20 bg-primary">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-        <h2 class="text-3xl font-bold text-white mb-8">Join Us in Making a Difference</h2>
-        <p class="text-xl text-white/90 mb-12">Help us bring dental care to more children in need</p>
-        <div class="flex justify-center space-x-6">
-        <button class="bg-white text-primary px-8 py-3 !rounded-button text-lg cursor-pointer whitespace-nowrap">Volunteer Now</button>
-        <button class="bg-secondary text-white px-8 py-3 !rounded-button text-lg cursor-pointer whitespace-nowrap">Make a Donation</button>
-        </div>
-        </div>
-        </section>
-        <section id="admin" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-16">Admin Portal</h2>
-        <div class="grid grid-cols-2 gap-8">
-        <!-- Dentist Portal -->
-        <div class="bg-white rounded-lg shadow-lg p-8">
-        <div class="flex items-center mb-6">
-        <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg">
-        <i class="ri-user-star-line text-2xl text-primary"></i>
-        </div>
-        <h3 class="text-2xl font-semibold ml-4">Dentist Portal</h3>
-        </div>
-        <div class="space-y-6">
-        <!-- Patient Records -->
-        <div class="border rounded-lg p-4">
-        <h4 class="font-semibold mb-4">Patient Records</h4>
-        <div class="grid grid-cols-2 gap-4">
-        <div class="bg-gray-50 rounded p-4">
-        <div class="flex items-center justify-between">
-        <span class="text-sm text-gray-600">Recent Patient</span>
-        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Active</span>
-        </div>
-        <p class="font-medium mt-2">Emily Wilson</p>
-        <p class="text-sm text-gray-500">Last Visit: March 8, 2025</p>
-        </div>
-        <div class="bg-gray-50 rounded p-4">
-        <div class="flex items-center justify-between">
-        <span class="text-sm text-gray-600">Upcoming</span>
-        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Scheduled</span>
-        </div>
-        <p class="font-medium mt-2">Michael Chen</p>
-        <p class="text-sm text-gray-500">Visit: March 12, 2025</p>
-        </div>
-        </div>
-        </div>
-        <!-- Screening Results -->
-        <div class="border rounded-lg p-4">
-        <h4 class="font-semibold mb-4">Screening Results</h4>
-        <div class="space-y-4">
-        <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
-        <div class="flex items-center">
-        <i class="ri-file-list-3-line text-primary mr-3"></i>
-        <div>
-        <p class="font-medium">Oral Screening Report</p>
-        <p class="text-sm text-gray-500">Patient: Sarah Thompson</p>
-        </div>
-        </div>
-        <button class="text-primary hover:text-primary/80 !rounded-button">View Report</button>
-        </div>
-        <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
-        <div class="flex items-center">
-        <i class="ri-file-list-3-line text-primary mr-3"></i>
-        <div>
-        <p class="font-medium">X-Ray Analysis</p>
-        <p class="text-sm text-gray-500">Patient: David Miller</p>
-        </div>
-        </div>
-        <button class="text-primary hover:text-primary/80 !rounded-button">View Report</button>
-        </div>
-        </div>
-        </div>
-        <!-- Specialist Consultation -->
-        <div class="border rounded-lg p-4">
-        <h4 class="font-semibold mb-4">Specialist Consultation</h4>
-        <div class="space-y-4">
-        <div class="flex items-center justify-between">
-        <button class="bg-primary text-white px-4 py-2 !rounded-button flex items-center">
-        <i class="ri-video-add-line mr-2"></i>
-        Start New Consultation
-        </button>
-        <button class="bg-secondary text-white px-4 py-2 !rounded-button flex items-center">
-        <i class="ri-user-shared-line mr-2"></i>
-        Grant Access
-        </button>
-        </div>
-        <div class="bg-gray-50 rounded p-4">
-        <p class="font-medium">Recent Consultations</p>
-        <div class="mt-3 space-y-2">
-        <div class="flex items-center justify-between text-sm">
-        <div>
-        <span>Dr. Jennifer Lee - Orthodontist</span>
-        <p class="text-xs text-gray-500">March 9, 2025</p>
-        </div>
-        <div class="flex items-center space-x-2">
-        <button onclick="downloadRecording('rec_123')" class="text-primary hover:text-primary/80 flex items-center">
-        <i class="ri-download-line mr-1"></i>
-        Recording
-        </button>
-        <button onclick="grantOneTimeAccess('file_123')" class="text-secondary hover:text-secondary/80 flex items-center">
-        <i class="ri-share-line mr-1"></i>
-        Share
-        </button>
-        </div>
-        </div>
-        <div class="flex items-center justify-between text-sm">
-        <div>
-        <span>Dr. Robert Garcia - Periodontist</span>
-        <p class="text-xs text-gray-500">March 7, 2025</p>
-        </div>
-        <div class="flex items-center space-x-2">
-        <button onclick="downloadRecording('rec_124')" class="text-primary hover:text-primary/80 flex items-center">
-        <i class="ri-download-line mr-1"></i>
-        Recording
-        </button>
-        <button onclick="grantOneTimeAccess('file_124')" class="text-secondary hover:text-secondary/80 flex items-center">
-        <i class="ri-share-line mr-1"></i>
-        Share
-        </button>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <!-- Admin Activity Logs -->
-        <div class="border rounded-lg p-4 mt-6">
-        <h4 class="font-semibold mb-4">Admin Activity Logs</h4>
-        <div class="space-y-4">
-        <div class="flex items-center justify-between mb-4">
-        <div class="relative">
-        <select id="logFilter" class="appearance-none bg-gray-50 border border-gray-200 rounded-lg px-4 py-2 pr-8">
-        <option value="all">All Activities</option>
-        <option value="created">Created Files</option>
-        <option value="modified">Modified Files</option>
-        <option value="deleted">Deleted Files</option>
-        </select>
-        <i class="ri-arrow-down-s-line absolute right-2 top-1/2 -translate-y-1/2"></i>
-        </div>
-        <button onclick="downloadLogs()" class="text-primary hover:text-primary/80 flex items-center">
-        <i class="ri-download-line mr-1"></i>
-        Export Logs
-        </button>
-        </div>
-        <div class="bg-gray-50 rounded p-4 space-y-3">
-        <div class="flex items-center justify-between text-sm">
-        <div class="flex items-center">
-        <i class="ri-file-add-line text-green-500 mr-2"></i>
-        <div>
-        <p>New patient file created: Emma Thompson</p>
-        <p class="text-xs text-gray-500">By: Admin Sarah - March 11, 2025 10:30 AM</p>
-        </div>
-        </div>
-        </div>
-        <div class="flex items-center justify-between text-sm">
-        <div class="flex items-center">
-        <i class="ri-edit-line text-blue-500 mr-2"></i>
-        <div>
-        <p>Patient file modified: Michael Chen</p>
-        <p class="text-xs text-gray-500">By: Admin John - March 11, 2025 09:15 AM</p>
-        </div>
-        </div>
-        </div>
-        <div class="flex items-center justify-between text-sm">
-        <div class="flex items-center">
-        <i class="ri-delete-bin-line text-red-500 mr-2"></i>
-        <div>
-        <p>Patient file deleted: Old Records</p>
-        <p class="text-xs text-gray-500">By: Admin Sarah - March 10, 2025 04:45 PM</p>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <!-- Treatment Summary Report -->
-        <div class="border rounded-lg p-4 mt-6">
-        <h4 class="font-semibold mb-4">Treatment Summary Report</h4>
-        <div class="space-y-4">
-        <div class="flex items-center justify-between mb-4">
-        <div class="flex space-x-4">
-        <div class="relative">
-        <select id="reportPeriod" class="appearance-none bg-gray-50 border border-gray-200 rounded-lg px-4 py-2 pr-8">
-        <option value="weekly">Weekly</option>
-        <option value="monthly">Monthly</option>
-        <option value="yearly">Yearly</option>
-        </select>
-        <i class="ri-arrow-down-s-line absolute right-2 top-1/2 -translate-y-1/2"></i>
-        </div>
-        <div class="relative">
-        <input type="date" class="bg-gray-50 border border-gray-200 rounded-lg px-4 py-2" value="2025-03-11">
-        </div>
-        </div>
-        <button onclick="downloadReport()" class="bg-primary text-white px-4 py-2 !rounded-button flex items-center">
-        <i class="ri-download-line mr-2"></i>
-        Download Report
-        </button>
-        </div>
-        <div class="bg-gray-50 rounded p-4">
-        <div class="grid grid-cols-3 gap-4 mb-4">
-        <div class="bg-white p-4 rounded-lg">
-        <p class="text-sm text-gray-500">Total Patients</p>
-        <p class="text-2xl font-semibold">247</p>
-        </div>
-        <div class="bg-white p-4 rounded-lg">
-        <p class="text-sm text-gray-500">Treatments</p>
-        <p class="text-2xl font-semibold">312</p>
-        </div>
-        <div class="bg-white p-4 rounded-lg">
-        <p class="text-sm text-gray-500">Success Rate</p>
-        <p class="text-2xl font-semibold">98%</p>
-        </div>
-        </div>
-        <div class="space-y-3">
-        <div class="flex justify-between items-center text-sm">
-        <span>Regular Checkups</span>
-        <span class="font-medium">124</span>
-        </div>
-        <div class="flex justify-between items-center text-sm">
-        <span>Teeth Cleaning</span>
-        <span class="font-medium">86</span>
-        </div>
-        <div class="flex justify-between items-center text-sm">
-        <span>Cavity Fillings</span>
-        <span class="font-medium">52</span>
-        </div>
-        <div class="flex justify-between items-center text-sm">
-        <span>Tooth Extractions</span>
-        <span class="font-medium">28</span>
-        </div>
-        <div class="flex justify-between items-center text-sm">
-        <span>Root Canals</span>
-        <span class="font-medium">22</span>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <!-- Office Administrator Portal -->
-        <div class="bg-white rounded-lg shadow-lg p-8">
-        <div class="flex items-center mb-6">
-        <div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-lg">
-        <i class="ri-admin-line text-2xl text-secondary"></i>
-        </div>
-        <h3 class="text-2xl font-semibold ml-4">Office Administrator</h3>
-        </div>
-        <div class="space-y-6">
-        <!-- Patient Management -->
-        <div class="border rounded-lg p-4">
-        <h4 class="font-semibold mb-4">Patient Management</h4>
-        <div class="space-y-4">
-        <button class="w-full bg-secondary text-white px-4 py-2 !rounded-button flex items-center justify-center">
-        <i class="ri-user-add-line mr-2"></i>
-        Create New Patient File
-        </button>
-        <div class="bg-gray-50 rounded p-4">
-        <p class="font-medium mb-3">Recent Files Created</p>
-        <div class="space-y-2">
-        <div class="flex items-center justify-between text-sm">
-        <span>Lucas Anderson</span>
-        <span class="text-gray-500">Created: March 10, 2025</span>
-        </div>
-        <div class="flex items-center justify-between text-sm">
-        <span>Sofia Martinez</span>
-        <span class="text-gray-500">Created: March 10, 2025</span>
-        </div>
-        <div class="flex items-center justify-between text-sm">
-        <span>William Taylor</span>
-        <span class="text-gray-500">Created: March 9, 2025</span>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <!-- Appointment Schedule -->
-        <div class="border rounded-lg p-4">
-        <h4 class="font-semibold mb-4">Appointment Schedule</h4>
-        <div class="space-y-4">
-        <div class="bg-gray-50 rounded p-4">
-        <div class="flex items-center justify-between mb-3">
-        <p class="font-medium">Today's Schedule</p>
-        <span class="text-sm text-gray-500">March 11, 2025</span>
-        </div>
-        <div class="space-y-2">
-        <div class="flex items-center justify-between text-sm">
-        <div>
-        <p>9:00 AM - Emma Thompson</p>
-        <p class="text-gray-500">Regular Checkup</p>
-        </div>
-        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Confirmed</span>
-        </div>
-        <div class="flex items-center justify-between text-sm">
-        <div>
-        <p>11:30 AM - James Wilson</p>
-        <p class="text-gray-500">Teeth Cleaning</p>
-        </div>
-        <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Pending</span>
-        </div>
-        <div class="flex items-center justify-between text-sm">
-        <div>
-        <p>2:00 PM - Olivia Davis</p>
-        <p class="text-gray-500">Consultation</p>
-        </div>
-        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Confirmed</span>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <!-- File Management -->
-        <div class="border rounded-lg p-4">
-        <h4 class="font-semibold mb-4">File Management</h4>
-        <div class="space-y-4">
-        <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
-        <div class="flex items-center">
-        <i class="ri-folder-line text-secondary mr-3"></i>
-        <p>Patient Records</p>
-        </div>
-        <button class="text-secondary hover:text-secondary/80">Manage</button>
-        </div>
-        <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
-        <div class="flex items-center">
-        <i class="ri-folder-line text-secondary mr-3"></i>
-        <p>Insurance Documents</p>
-        </div>
-        <button class="text-secondary hover:text-secondary/80">Manage</button>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </section>
-        
+       
         
         <section id="outreach" class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-16">Recent Outreach Activities</h2>
-                <div class="grid grid-cols-2 gap-12">
-                    <div class="space-y-6">
-                        <h3 class="text-2xl font-semibold">Rural Health Initiative 2025</h3>
-                        <p class="text-gray-700 leading-relaxed">Our latest outreach program focused on bringing dental care to rural communities in underserved areas. Through mobile clinics and teledentistry solutions, we provided essential dental services to over 500 children in just two weeks.</p>
-                        <div class="space-y-4">
-                            <div class="flex items-center space-x-4">
-                                <i class="ri-check-line text-green-500"></i>
-                                <span>Served 15 remote communities</span>
-                            </div>
-                            <div class="flex items-center space-x-4">
-                                <i class="ri-check-line text-green-500"></i>
-                                <span>Conducted 500+ dental screenings</span>
-                            </div>
-                            
-                            <div class="flex items-center space-x-4">
-                                <i class="ri-check-line text-green-500"></i>
-                                <span>Distributed 1000+ dental care kits</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative">
-                        <div class="outreach-slider overflow-hidden rounded-lg">
-                            <div class="slides flex transition-transform duration-500">
-                                <img src="https://readdy.ai/api/search-image?query=dental professionals providing care to children in a mobile clinic setting, warm lighting, caring interaction&width=600&height=400&seq=15&orientation=landscape&flag=e1b6da82be0709473e417d874857ff73" class="w-full h-96 object-cover" alt="Outreach 1">
-                                <img src="https://readdy.ai/api/search-image?query=children receiving dental education in a classroom setting, interactive learning environment&width=600&height=400&seq=16&orientation=landscape&flag=fe817273fe6cba479d7131f7b0e7473a" class="w-full h-96 object-cover" alt="Outreach 2">
-                                <img src="https://readdy.ai/api/search-image?query=dental team distributing oral care kits to smiling children, community engagement&width=600&height=400&seq=17&orientation=landscape&flag=2c530769030d72ac9a95153d016d357d" class="w-full h-96 object-cover" alt="Outreach 3">
-                            </div>
-                            
-                            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                                <button class="w-3 h-3 rounded-full bg-white/50 slider-dot" data-index="0"></button>
-                                <button class="w-3 h-3 rounded-full bg-white/50 slider-dot" data-index="1"></button>
-                                <button class="w-3 h-3 rounded-full bg-white/50 slider-dot" data-index="2"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <h2 class="text-3xl font-bold text-center mb-16">Recent Outreach Activities</h2>
+            <div class="grid grid-cols-2 gap-12">
+            <div class="space-y-6">
+            <h3 class="text-2xl font-semibold">Rural Health Initiative 2025</h3>
+            <p class="text-gray-700 leading-relaxed">Our latest outreach program focused on bringing dental care to rural communities in underserved areas. Through mobile clinics and teledentistry solutions, we provided essential dental services to over 500 children in just two weeks.</p>
+            <div class="space-y-4">
+            <div class="flex items-center space-x-4">
+            <i class="ri-check-line text-green-500"></i>
+            <span>Served 15 remote communities</span>
             </div>
-        </section>
+            <div class="flex items-center space-x-4">
+            <i class="ri-check-line text-green-500"></i>
+            <span>Conducted 500+ dental screenings</span>
+            </div>
+            <div class="flex items-center space-x-4">
+            <i class="ri-check-line text-green-500"></i>
+            <span>Distributed 1000+ dental care kits</span>
+            </div>
+            </div>
+            </div>
+            <div class="relative">
+            <div class="outreach-slider overflow-hidden rounded-lg">
+            <div class="slides flex transition-transform duration-500">
+            <img src="images/teledentistry3.jpg" class="w-full h-96 object-cover" alt="Outreach 1">
+            </div>
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+            <button class="w-3 h-3 rounded-full bg-white/50 slider-dot" data-index="0"></button>
+            <button class="w-3 h-3 rounded-full bg-white/50 slider-dot" data-index="1"></button>
+            <button class="w-3 h-3 rounded-full bg-white/50 slider-dot" data-index="2"></button>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
+
+        <section id="team" class="py-20">
+            <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Meet the Team</h2>
+            <div class="grid grid-cols-4 gap-8">
+            <div class="text-center">
+            <img src="https://readdy.ai/api/search-image?query=professional headshot of a middle-aged female dentist with warm smile, white coat, natural lighting&width=300&height=300&seq=11&orientation=squarish&flag=e2074b04662efffd87e38d7fd74d4152" alt="Dr. Sarah Chen" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+            <h3 class="text-xl font-semibold">Dr. Sarah Chen</h3>
+            <p class="text-gray-600">Founder & Lead Dentist</p>
+            </div>
+            <div class="text-center">
+            <img src="https://readdy.ai/api/search-image?query=professional headshot of a male dental specialist in his 40s, confident pose, white coat&width=300&height=300&seq=12&orientation=squarish&flag=23907d2ebf72b4d24a9e5bfbc3ae9d8a" alt="Dr. Michael Rodriguez" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+            <h3 class="text-xl font-semibold">Dr. Michael Rodriguez</h3>
+            <p class="text-gray-600">Pediatric Specialist</p>
+            </div>
+            <div class="text-center">
+            <img src="https://readdy.ai/api/search-image?query=professional headshot of a young female dental hygienist, friendly smile, white uniform&width=300&height=300&seq=13&orientation=squarish&flag=1cb5e8cbcf41fe769a068db3da667f29" alt="Emma Thompson" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+            <h3 class="text-xl font-semibold">Emma Thompson</h3>
+            <p class="text-gray-600">Lead Dental Hygienist</p>
+            </div>
+            <div class="text-center">
+            <img src="https://readdy.ai/api/search-image?query=professional headshot of a male technology specialist in his 30s, business casual attire&width=300&height=300&seq=14&orientation=squarish&flag=97e44389c618974c6d49613cf6c2f821" alt="David Park" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+            <h3 class="text-xl font-semibold">David Park</h3>
+            <p class="text-gray-600">Technology Director</p>
+            </div>
+            </div>
+            <div class="grid grid-cols-3 gap-8">
+            </div>
+            </div>
+            </section>
     </main>
 
     <footer class="bg-gray-900 text-white py-12">

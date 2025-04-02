@@ -3,173 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teledentistry</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>tailwind.config={theme:{extend:{colors:{primary:'#15B8A6',secondary:'#FF6B6B'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
-
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="login_style.css">
+    <title>Admin Portal - Secure Login</title>
 </head>
-<body class="bg-white">
+<body>
+    <div class="main-container">
+        <div class="wrapper">
+            <span class="bg-animate"></span>
+            <span class="bg-animate2"></span>
 
-    <main class="pt-16">
-       
-        <!-- Office Administrator Portal -->
-        <div class="bg-white rounded-lg shadow-lg p-8">
-        <div class="flex items-center mb-6">
-        <div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-lg">
-        <i class="ri-admin-line text-2xl text-secondary"></i>
-        </div>
-        <h3 class="text-2xl font-semibold ml-4">Office Administrator</h3>
-        </div>
-        <div class="space-y-6">
-        <!-- Patient Management -->
-        <div class="border rounded-lg p-4">
-        <h4 class="font-semibold mb-4">Patient Management</h4>
-        <div class="space-y-4">
-        <button class="w-full bg-secondary text-white px-4 py-2 !rounded-button flex items-center justify-center">
-        <i class="ri-user-add-line mr-2"></i>
-        Create New Patient File
-        </button>
-        <div class="bg-gray-50 rounded p-4">
-        <p class="font-medium mb-3">Recent Files Created</p>
-        <div class="space-y-2">
-        <div class="flex items-center justify-between text-sm">
-        <span>Lucas Anderson</span>
-        <span class="text-gray-500">Created: March 10, 2025</span>
-        </div>
-        <div class="flex items-center justify-between text-sm">
-        <span>Sofia Martinez</span>
-        <span class="text-gray-500">Created: March 10, 2025</span>
-        </div>
-        <div class="flex items-center justify-between text-sm">
-        <span>William Taylor</span>
-        <span class="text-gray-500">Created: March 9, 2025</span>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <!-- Appointment Schedule -->
-        <div class="border rounded-lg p-4">
-        <h4 class="font-semibold mb-4">Appointment Schedule</h4>
-        <div class="space-y-4">
-        <div class="bg-gray-50 rounded p-4">
-        <div class="flex items-center justify-between mb-3">
-        <p class="font-medium">Today's Schedule</p>
-        <span class="text-sm text-gray-500">March 11, 2025</span>
-        </div>
-        <div class="space-y-2">
-        <div class="flex items-center justify-between text-sm">
-        <div>
-        <p>9:00 AM - Emma Thompson</p>
-        <p class="text-gray-500">Regular Checkup</p>
-        </div>
-        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Confirmed</span>
-        </div>
-        <div class="flex items-center justify-between text-sm">
-        <div>
-        <p>11:30 AM - James Wilson</p>
-        <p class="text-gray-500">Teeth Cleaning</p>
-        </div>
-        <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Pending</span>
-        </div>
-        <div class="flex items-center justify-between text-sm">
-        <div>
-        <p>2:00 PM - Olivia Davis</p>
-        <p class="text-gray-500">Consultation</p>
-        </div>
-        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Confirmed</span>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <!-- File Management -->
-        <div class="border rounded-lg p-4">
-        <h4 class="font-semibold mb-4">File Management</h4>
-        <div class="space-y-4">
-        <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
-        <div class="flex items-center">
-        <i class="ri-folder-line text-secondary mr-3"></i>
-        <p>Patient Records</p>
-        </div>
-        <button class="text-secondary hover:text-secondary/80">Manage</button>
-        </div>
-        <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
-        <div class="flex items-center">
-        <i class="ri-folder-line text-secondary mr-3"></i>
-        <p>Insurance Documents</p>
-        </div>
-        <button class="text-secondary hover:text-secondary/80">Manage</button>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </section>
-        
-    </main>
-
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid grid-cols-4 gap-8">
-                <div>
-                    <span class="text-2xl font-['Pacifico'] text-white mb-4 block">logo</span>
-                    <p class="text-gray-400">Bringing smiles to children worldwide through innovative teledentistry solutions.</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white cursor-pointer">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white cursor-pointer">Services</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white cursor-pointer">Education</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white cursor-pointer">Impact</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
-                    <ul class="space-y-2">
-                        <li class="text-gray-400">contact@smilereach.org</li>
-                        <li class="text-gray-400">+1 (555) 123-4567</li>
-                        <li class="text-gray-400">123 Dental Street, Suite 100</li>
-                        <li class="text-gray-400">New York, NY 10001</li>
-                    </ul>
-                </div>
+            <!-- Login Form Screen CONTENT-->
+            <div class="form-box login active">            
+                <h1 class="animation" style="--i:0;">Secure Login</h1>
                 
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 cursor-pointer">
-                            <i class="ri-facebook-fill text-white"></i>
-                        </a>
-                        
-                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 cursor-pointer">
-                            <i class="ri-twitter-fill text-white"></i>
-                        </a>
-                        
-                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 cursor-pointer">
-                            <i class="ri-instagram-fill text-white"></i>
-                        </a>
-                        
-                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 cursor-pointer">
-                            <i class="ri-linkedin-fill text-white"></i>
-                        </a>
+                <form action="#">
+                    <div class="input-box animation" style="--i:1;">
+                        <input type="text" required>
+                        <label>Username or Email</label>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="input-box animation" style="--i:2;">
+                        <input type="password" required>
+                        <label>Password</label>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
                     
+                    <div class="options-container animation" style="--i:3;">                    
+                        <div class="forgot-password">
+                            <a href="#" class="show-forgot">Forgot password?</a>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="button animation" style="--i:4;">Login</button>
+                </form>
+
+                <div class="divider animation" style="--i:5;">
+                    <span>or continue with</span>
+                </div>
+
+                <div class="social-login animation" style="--i:6;">
+                    <button class="social-btn google animation" style="--i:7;">
+                        <i class="fab fa-google"></i> Google
+                    </button>
+                    <button class="social-btn apple animation" style="--i:8;">
+                        <i class="fab fa-apple"></i> Apple
+                    </button>
+                </div>
+                <div class="legal-links animation" style="--i:9;">
+                    <a href="#">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="#">Terms of Service</a>
+                    <span>•</span>
+                    <a href="#">Contact Support</a>
+                </div>
+                <div class="copyright animation" style="--i:10;">&copy; 2025 Admin Portal. All rights reserved.</div>
+            </div>
+
+            <!-- Forgot Password Form Screen -->
+            <div class="form-box forgot-password">
+                <h1 class="animation" style="--i:0;">Forgot Password</h1>
+                <p class="animation" style="--i:1;">Enter your email address and we'll send you a link to reset your password</p>
+                <form>
+                    <div class="input-box animation" style="--i:2;">
+                        <input type="name"> <!--To be modified and reviewed later because of faster testing-->
+                        <label>Email Address</label>
+                        <i class='bx bx-envelope'></i>
+                    </div>
+                    <button type="submit" class="button animation" style="--i:3;">Send Reset Link</button>
+                </form>
+                <div class="options-container animation" style="--i:4;">
+                    <div class="back-to-login">
+                        <a href="#" class="show-login">Back to Login</a>
                     </div>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 SmileReach. All rights reserved.</p>
+
+            <!-- OTP Verification Form Screen-->
+            <div class="form-box otp-verify">
+                <h1>Verify Your Identity</h1>
+                <p>We've sent a 4-digit code to your email</p>
+                <form>
+                    <div class="otp-container">
+                        <input type="text" maxlength="1" pattern="[0-9]">
+                        <input type="text" maxlength="1" pattern="[0-9]">
+                        <input type="text" maxlength="1" pattern="[0-9]">
+                        <input type="text" maxlength="1" pattern="[0-9]">                      
+                    </div>
+                    <button type="submit" class="button animation">Verify Code</button>
+                </form>
+                <div class="options-container">
+                    <div class="forgot-password">     <!-- to bring back to email screen -->
+                        <a href="#" class="show-forgot">Go Back</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reset Password Form Screen-->
+            <div class="form-box reset-password">
+                <h1>Reset Password</h1>
+                <p>Enter your new password below</p>
+                <form>
+                    <div class="input-box">
+                        <input type="password" required>
+                        <label>New Password</label>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" required>
+                        <label>Confirm Password</label>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+                    <button type="submit" class="button animation">Reset Password</button>
+                </form>
+                <div class="options-container">
+                    <div class="back-to-login">
+                        <a href="#" class="show-login">Cancel</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Welcome Side Content login -->
+            <div class="info-text login-info">
+                <div class="logo-container">
+                    <p class="animation" style="--i:0;">LOGO</p>
+                </div>
+                <h1 class="animation" style="--i:1;">Welcome Back to <span>SmileConnect</span> Admin</h1>
+                <p class="animation" style="--i:2;">Enter your credentials to access your management account</p>
+            </div>
+
+            <!-- Forgot Password Info Side -->
+            <div class="info-text forgot-info">
+                <div class="logo-container">
+                    <p class="animation"></p>
+                </div>
+                <h1 class="animation"><span>Password Troubles?</span></h1>
+                <h2 class="animation">Let's Get You Back on Track!</h2>
+                <div class="steps-container animation">
+                    <ol>
+                        <li>Enter your registered email address</li>
+                        <li>Check your inbox for a recovery email</li>
+                        <li>Follow the instructions to reset your password</li>
+                        <li>Login with your new credentials</li>
+                    </ol>
+                </div>
             </div>
         </div>
-    </footer>
-      
+    </div>
 
+    <script src="login_script.js"></script>
 </body>
 </html>

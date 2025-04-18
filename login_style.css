@@ -12,14 +12,16 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(360deg, #8dc1ce 0%, #f6fcfd 100%);
+    background: 
+        url('images/pattern.png') repeat, /* I have added the background pattern (to be reviewed if no appreciated)*/
+        linear-gradient(360deg, #8dc1ce 0%, #f6fcfd 100%);
     animation: gradientBG 15s ease infinite;
     overflow: hidden;
 }
 @keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% { background-position: 10% 0, 0% 50%; }
+    50% { background-position: 0 10%, 100% 50%; }
+    100% { background-position: 10% 0, 0% 50%; }
 }
 .main-container {
     display: flex;
@@ -277,7 +279,7 @@ body {
     font-weight: 600;
 }
 
-.forgot-password a {
+.forgot-password a, .options-container .show-login {
     color: #00796b;
     text-decoration: none;
     font-weight: 600;
@@ -285,7 +287,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.forgot-password a:hover {
+.forgot-password a:hover, .options-container .show-login:hover {
     text-decoration: underline;
     color: #0097a7;
 }
@@ -320,8 +322,9 @@ body {
 }
 
 .social-btn.google:hover {
-    border-color: #00796b;
     color: #0097a7;
+    box-shadow: 0 0 1px #00796b;
+    border: 2px solid #00796b;
 }
 
 .social-btn.apple {
@@ -331,10 +334,11 @@ body {
 }
 
 .social-btn.apple:hover {
-    border-color:linear-gradient(to right, #0097a7, #00796b);
-    background:linear-gradient(to right, #0097a7, #00796b);
-    color: white;
-    transition: all 0.3s ease;
+    background: transparent;
+    box-shadow: 0 0 1px #00796b;
+    border-color: #00796b;
+    color: #0097a7;
+    border: 2px solid #00796b;
 }
 
 .social-btn i {
@@ -417,11 +421,12 @@ body {
     height: 45px;
     text-align: center;
     font-size: 18px;
-    border: 3px solid dodgerblue;
-    border-radius: 5px;
+    border: 2px solid #0097a7;
+    border-radius: 10px;
     outline: none;
     transition: all 0.3s ease;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 12px black;
+    font-weight: 500;
 }
 
 .otp-container input:focus {

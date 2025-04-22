@@ -1,10 +1,56 @@
-:where([class^="ri-"])::before { content: "\f3c2"; }
-.stats-card {
-backdrop-filter: blur(8px);
-background: rgba(255, 255, 255, 0.9);
+/* Tailwind CSS configuration */
+:root {
+    --primary: #27caca;
+    --secondary: #3bb4ec;
+    --border-radius-none: 0px;
+    --border-radius-sm: 4px;
+    --border-radius-default: 8px;
+    --border-radius-md: 12px;
+    --border-radius-lg: 16px;
+    --border-radius-xl: 20px;
+    --border-radius-2xl: 24px;
+    --border-radius-3xl: 32px;
+    --border-radius-full: 9999px;
+    --border-radius-button: 8px;
 }
+
+:where([class^="ri-"])::before { content: "\f3c2"; }
+
+/* General styles */
+body {
+    background-color: #f0f0f0;
+    font-family: 'Pacifico', cursive;
+}
+
+/* Hero section */
+.hero-section {
+    height: 100vh;
+    background-image: url('https://readdy.ai/api/search-image?query=professional dental care scene with dentist treating child patient in modern clinic, soft natural lighting, caring atmosphere, medical equipment visible but not prominent, warm and welcoming environment&width=1920&height=1080&seq=1&orientation=landscape&flag=484288c37019a609ee020046e896ae93');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Gradient overlay */
+.hero-section .bg-gradient-to-r {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
+}
+
+
+/* Map container */
 .map-container {
-background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png');
-background-position: center;
-background-size: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Stats card */
+.stats-card {
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Custom class */
+.custom-class {
+    color: #333;
+    padding: 10px;
 }

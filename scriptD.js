@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
       { name: 'Khayelitsha Primary School', city: 'Cape Town', visitedDate: '2025-02-28', rating: null }
     ],
     schoolsToVisit: [
-      { name: 'Test Soweto Primary School', city: 'Johannesburg', plannedDate: '2025-06-15' },
+      { name: 'TestSoweto Primary School', city: 'Johannesburg', plannedDate: '2025-06-15' },
       { name: 'Alexandra Primary School', city: 'Johannesburg', plannedDate: '2025-07-22' },
       { name: 'Durban Central Primary School', city: 'Durban', plannedDate: '2025-08-10' }
     ]

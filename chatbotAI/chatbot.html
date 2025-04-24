@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Dental Assistant</title>
+    <link rel="stylesheet" href="chatbot.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar for Previous Conversations -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-tooth"></i>
+                    <span>Dental Assistant</span>
+                </div>
+            </div>
+            
+            <button class="new-chat-btn">
+                <i class="fas fa-plus"></i>
+                <span>New Chat</span>
+            </button>
+            
+            <h3 class="conversations-title">Recent Conversations</h3>
+            
+            <div class="conversation-list">
+
+                <!-- Sample conversation items -->
+                <div class="conversation-item active">
+                    <div class="conversation-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="conversation-text">
+                        <div class="conversation-title">Teeth Cleaning Tips</div>
+                        <div class="conversation-snippet">What's the best way to clean...</div>
+                    </div>
+                    <div class="conversation-time">2h ago</div>
+                    <div class="conversation-actions">
+                        <button class="action-btn" title="Delete"><i class="fas fa-trash"></i></button>
+                        <button class="action-btn" title="Rename"><i class="fas fa-edit"></i></button>
+                    </div>
+                </div>
+                
+                <div class="conversation-item">
+                    <div class="conversation-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="conversation-text">
+                        <div class="conversation-title">Sensitive Teeth Analysis</div>
+                        <div class="conversation-snippet">I've been having pain when...</div>
+                    </div>
+                    <div class="conversation-time">1d ago</div>
+                    <div class="conversation-actions">
+                        <button class="action-btn" title="Delete"><i class="fas fa-trash"></i></button>
+                        <button class="action-btn" title="Rename"><i class="fas fa-edit"></i></button>
+                    </div>
+                </div>
+                
+                <div class="conversation-item">
+                    <div class="conversation-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="conversation-text">
+                        <div class="conversation-title">Braces Information</div>
+                        <div class="conversation-snippet">What are the different types of...</div>
+                    </div>
+                    <div class="conversation-time">3d ago</div>
+                    <div class="conversation-actions">
+                        <button class="action-btn" title="Delete"><i class="fas fa-trash"></i></button>
+                        <button class="action-btn" title="Rename"><i class="fas fa-edit"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <div class="user-avatar">U</div>
+                    <div class="user-name">User</div>
+                </div>
+                <button class="settings-btn" title="Settings">
+                    <i class="fas fa-cog"></i>
+                </button>
+            </div>
+        </aside>
+        
+        <!-- Mobile Overlay -->
+        <div class="overlay"></div>
+        
+        <!-- Main Content Area -->
+        <main class="main-container">
+            <!-- Header -->
+            <header class="header">
+                <div class="chat-info">
+                    <button class="menu-toggle" title="Toggle Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h2 class="header-title">Teeth Cleaning Tips</h2>
+                </div>
+                <div class="header-actions">
+                    <button class="header-btn" title="Share Chat">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                    <button class="header-btn" title="Clear Chat">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                    <button class="header-btn" title="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </header>
+            
+            <!-- Welcome Screen (shown when no chat is active) -->
+            <div class="welcome-screen" style="display: none;">
+                <div class="welcome-logo">
+                    <i class="fas fa-tooth"></i>
+                </div>
+                <h1 class="welcome-title">Welcome to Dental Assistant AI</h1>
+                <p class="welcome-subtitle">I'm here to help you with all your dental questions and concerns. How can I assist you today?</p>
+                
+                <div class="examples-container">
+                    <div class="example-card">
+                        <div class="example-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="example-title">Detect Dental Problems</h3>
+                        <p class="example-text">Upload an image and I'll help identify potential issues.</p>
+                    </div>
+                    
+                    <div class="example-card">
+                        <div class="example-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3 class="example-title">Learn About Procedures</h3>
+                        <p class="example-text">Get information about common dental treatments.</p>
+                    </div>
+                    
+                    <div class="example-card">
+                        <div class="example-icon">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <h3 class="example-title">Care Routines</h3>
+                        <p class="example-text">Get personalized oral hygiene recommendations.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chat Container -->
+            <div class="chat-container" id="chat-container">
+                <!-- Bot Message -->
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Hello! I'm your dental assistant AI. I can help you with information about oral hygiene, dental procedures, and identifying potential issues from images. How can I help you today?</p>
+                        <span class="timestamp">12:01 PM</span>
+                    </div>
+                </div>
+                
+                <!-- User Message -->
+                <div class="message user-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>What's the best way to clean my teeth to prevent cavities?</p>
+                        <span class="timestamp">12:02 PM</span>
+                    </div>
+                </div>
+                
+                <!-- Bot Message with Actions -->
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Great question! To prevent cavities, I recommend:</p>
+                        <p>1. Brush your teeth twice a day with fluoride toothpaste</p>
+                        <p>2. Floss daily to clean between teeth</p>
+                        <p>3. Use mouthwash to reduce bacteria</p>
+                        <p>4. Limit sugary and acidic foods</p>
+                        <p>5. Visit your dentist regularly for checkups</p>
+                        <span class="timestamp">12:03 PM</span>
+                        <div class="message-actions">
+                            <button class="message-action-btn" title="Copy">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                            <button class="message-action-btn" title="Thumbs Up">
+                                <i class="fas fa-thumbs-up"></i>
+                            </button>
+                            <button class="message-action-btn" title="Thumbs Down">
+                                <i class="fas fa-thumbs-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Loading indicator (shown when bot is thinking) -->
+                <div class="loading-indicator" style="display: none;">
+                    <div class="dot-pulse">
+                        <div class="dot-pulse__dot"></div>
+                    </div>
+                    <span>Thinking...</span>
+                </div>
+            </div>
+            
+            <!-- File Preview Area (Hidden by default) -->
+            <div class="file-preview" id="file-preview" style="display: none;">
+                <div class="preview-header">
+                    <span>Selected File</span>
+                    <button id="remove-file">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="preview-content">
+                    <img id="image-preview" src="" alt="Preview">
+                    <span id="file-name">tooth_image.jpg</span>
+                </div>
+            </div>
+            
+            <!-- Typing Area -->
+            <div class="typing-area">
+                <!-- File Upload Button -->
+                <div class="attachment-btn">
+                    <label for="file-upload" title="Upload Image">
+                        <i class="fas fa-paperclip"></i>
+                    </label>
+                    <input type="file" id="file-upload" accept="image/*" hidden>
+                </div>
+                
+                <!-- Message Input Form -->
+                <form action="#" class="typing-form">
+                    <textarea id="user-input" placeholder="Type your message here..." rows="1"></textarea>
+                    <div class="input-actions">
+                        <button type="button" class="input-action-btn" title="Add Emoji">
+                            <i class="far fa-smile"></i>
+                        </button>
+                        <button type="submit" class="send-button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- Voice Input Button -->
+                <button class="voice-input-btn" title="Voice Input">
+                    <i class="fas fa-microphone"></i>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="chatbot.js"></script>
+    
+</body>
+</html>

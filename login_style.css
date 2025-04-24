@@ -436,16 +436,16 @@ body {
 }
 
 .info-text h1 {
-    font-size: 28px;
+    font-size: 25px;
     margin-bottom: 15px;
 }
 
 .info-text h1 span {
     background: linear-gradient(to right, #0097a7, #00796b);
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .info-text p {
@@ -476,4 +476,217 @@ body {
 .steps-container li {
     margin-bottom: 10px;
     font-size: 14px;
+}
+/* ==================== ENHANCED MEDIA QUERIES ==================== */
+
+/* Large screens (1200px and up) - Default styles */
+
+/* Medium screens (992px to 1199px) - Slight adjustments */
+@media (max-width: 1399px) {
+    .wrapper {
+        width: 700px;
+        height: 500px auto;
+    }
+    
+    .form-box, .info-text {
+        padding: 30px;
+    }
+    
+    .legal-links {
+        bottom: 8px; /* Adjusted to ensure visibility */
+    }
+    
+    .copyright {
+        bottom: 4px; /* Adjusted to ensure visibility */
+    }
+    h1 span{
+        font-size: 20px;
+    }
+}
+
+/* Small screens (768px to 991px) - More compact layout */
+@media (max-width: 1299px) {
+    .wrapper {
+        width: 650px;
+        height: 480px auto;
+    }
+    .form-box h1 {
+        font-size: 22px;
+    }
+    
+    .info-text h1 {
+        font-size: 24px;
+    }
+    
+    .info-text h1 span {
+        font-size: 32px;
+    }
+    
+    .legal-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+        bottom: 10px;
+    }
+    
+    .copyright {
+        position: relative;
+        bottom: 0;
+        margin-top: 10px;
+    }
+}
+
+/* Tablets (576px to 767px) - Switch to stacked layout */
+@media (max-width: 890px) {
+    body {
+        align-items: flex-start;
+        padding: 30px 0;
+        overflow: auto;
+        background-size: auto, cover;
+    }
+    
+    .main-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    h1 span{
+        font-size: 20px;
+    }
+    
+    .wrapper {
+        width: 100%;
+        height: auto;
+        min-height: 500px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .form-box, .info-text {
+        position: relative;
+        width: 100% !important;
+        height: auto;
+        padding: 30px 25px;
+        left: 0 !important;
+        right: 0 !important;
+        opacity: 1 !important;
+        pointer-events: all !important;
+    }
+    
+    /* Improved mobile info section handling */
+    .info-text {
+        display: none !important;
+    }
+    
+    .form-box.login {
+        display: block;
+    }
+    
+    .form-box:not(.login) {
+        display: none;
+    }
+    
+    .wrapper.active .form-box.login,
+    .wrapper.verify .form-box.login,
+    .wrapper.reset .form-box.login {
+        display: none;
+    }
+    
+    .wrapper.active .form-box.forgot-password,
+    .wrapper.verify .form-box.otp-verify,
+    .wrapper.reset .form-box.reset-password {
+        display: block;
+    }
+    
+    /* Ensure all content is visible */
+    .legal-links {
+        position: relative;
+        bottom: 0;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    
+    .copyright {
+        position: relative;
+        bottom: 0;
+        margin-top: 10px;
+    }
+    
+    /* Adjust form elements */
+    .input-box {
+        margin: 18px 0;
+    }
+    
+    .button {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .social-btn {
+        margin-bottom: 10px;
+    }
+
+    /* Hide decorative elements */
+    .bg-animate, .bg-animate2 {
+        display: none;
+    }
+}
+
+/* Mobile devices (475px and below) */
+@media (max-width: 475px) {
+    .form-box, .info-text {
+        padding: 25px 20px;
+    }
+    
+    .form-box h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .otp-container {
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .otp-container input {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .legal-links {
+        align-items: center;
+        gap: 5px;
+        margin-top: 2px;
+    }
+    .social-btn.apple{
+        margin-bottom: 0;
+    }
+    .social-btn.google{
+        margin-bottom: 0;
+    }
+}
+
+/* Very small mobile devices (375px and below) */
+@media (max-width: 375px) and (min-width: 320px) {
+    .form-box {
+        padding: 20px 15px;
+    }
+    
+    .input-box {
+        height: 42px;
+        margin: 15px 0;
+    }
+    
+    .otp-container input {
+        width: 40px;
+        height: 40x;
+        font-size: 16px;
+    }
+    
+    .button {
+        height: 40px;
+    }
+    
+    .social-btn {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
 }

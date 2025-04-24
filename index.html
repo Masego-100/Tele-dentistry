@@ -4,302 +4,273 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teledentistry</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>tailwind.config={theme:{extend:{colors:{primary:'#15B8A6',secondary:'#FF6B6B'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
-    
-
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
-
+    <link rel="stylesheet" href="index.css">
+    <style>
+       
+    </style>
 </head>
-<body class="bg-white">
+
+
+<body class="Body">
     
-    <nav class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <span class="text-2xl font-['Pacifico'] text-primary">loga</span>
+    <nav class="Navbar">
+        <div class="NavBar_outer_container">
+            <div class="NavBar_inner_container">
+                <div class="Logo">
+                    <span class="Logo_style">logo</span>
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="text-gray-700 hover:text-primary cursor-pointer">Home</a>
-                    <a href="#about" class="text-gray-700 hover:text-primary cursor-pointer">About</a>
-                    <a href="#education" class="text-gray-700 hover:text-primary cursor-pointer">Education</a>
-                    <a href="#impact" class="text-gray-700 hover:text-primary cursor-pointer">Impact</a>
-                    <a href="#stories" class="text-gray-700 hover:text-primary cursor-pointer">Stories</a>
+                <div class="NavBar_content">
+                    <a href="#home" class="NavBarItem">Home</a>
+                    <a href="#about" class="NavBarItem">About</a>
+                    <a href="#education" class="NavBarItem">Education</a>
+                    <a href="#impact" class="NavBarItem">Impact</a>
+                    <a href="#stories" class="NavBarItem">Stories</a>
                     
                 </div>
             </div>
         </div>
     </nav>
 
-    <main class="pt-16">
-        <section id="hero" class="relative h-screen bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=professional dental care scene with dentist treating child patient in modern clinic, soft natural lighting, caring atmosphere, medical equipment visible but not prominent, warm and welcoming environment&width=1920&height=1080&seq=1&orientation=landscape&flag=484288c37019a609ee020046e896ae93')">
-        <div class="absolute inset-0 bg-gradient-to-r from-white/90 to-white/50"></div>
-        <div class="relative max-w-7xl mx-auto px-4 h-full flex items-center">
-        <div class="w-1/2">
-        <h1 class="text-5xl font-bold text-gray-900 mb-6">Bringing Smiles to Every Child</h1>
-        <p class="text-xl text-gray-700 mb-8">Providing free dental care and education to children in underserved communities through innovative teledentistry solutions.</p>
-        <div class="flex space-x-4">
-      
-        </div>
-        </div>
-        </div>
-        </section>
-        <section id="about" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-16">About Smile Connect</h2>
-        <div class="grid grid-cols-2 gap-12 items-center">
-        <div class="space-y-6">
-        <p class="text-lg text-gray-700 leading-relaxed">SmileReach was founded in 2020 with a simple yet powerful mission: to bring quality dental care to every child, regardless of their location or economic status. Through innovative teledentistry solutions, we've been breaking down barriers that traditionally prevented access to dental healthcare.</p>
-        <p class="text-lg text-gray-700 leading-relaxed">Our program combines cutting-edge technology with compassionate care, enabling us to reach children in remote and underserved communities. We believe that every smile matters, and early dental education and intervention can significantly impact a child's overall health and confidence.</p>
-        </div>
-        <div class="relative">
-        <img src="images/teledentistry1.webp" alt="About SmileReach" class="rounded-lg shadow-lg">
-        <div class="absolute -bottom-6 -right-6 bg-primary text-white p-4 rounded-lg">
-        <p class="text-lg font-semibold">Est. 2025</p>
-        </div>
-        </div>
-        </div>
-        </div>
+    <main class="main">
+        <!--1st section of the web. Introdection-->
+        <!--Displays the navBar and the 1st image-->
+        <section id="Into_after_navbar" class="First_section" style="background-image: url('images/teledentistry.7.jpg')">
+            <!--This div -->
+            <div class="hero-section">
+                <div class="overlay"></div>
+                <div class="imagText_Outer_container">
+                    <div class="Image_Text">
+                        <h1 class="Image_Text_Heading">Bringing Smiles to Every Child</h1>
+                        <p class="Image_Text_Para">Providing free dental care and education to children in underserved communities through innovative teledentistry solutions.</p>
+                        <div class="flex space-x-4"></div><!--Dont know yet what exactly this div stores -->
+                    </div>
+                </div>
+              </div>
+              
+            <!--Div with the typed conted on the Intro picture placed after NavBar-->
         </section>
 
-        <section id="education" class="py-20">
-            <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-16">Educational Resources</h2>
-            <div class="grid grid-cols-3 gap-8">
-            <div class="bg-white rounded-lg shadow-lg p-6">
-            <div class="w-12 h-12 flex items-center justify-center mb-4">
-            <i class="ri-video-line text-3xl text-primary"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-4">Video Tutorials</h3>
-            <p class="text-gray-600">Learn proper brushing techniques and oral care tips through our engaging video content.</p>
-            </div>
-            <div class="bg-white rounded-lg shadow-lg p-6">
-            <div class="w-12 h-12 flex items-center justify-center mb-4">
-            <i class="ri-book-open-line text-3xl text-primary"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-4">Interactive Guides</h3>
-            <p class="text-gray-600">Step-by-step guides for maintaining good oral hygiene and preventing dental issues.</p>
-            </div>
-            <div class="bg-white rounded-lg shadow-lg p-6">
-            <div class="w-12 h-12 flex items-center justify-center mb-4">
-            <i class="ri-questionnaire-line text-3xl text-primary"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-4">Fun Quizzes</h3>
-            <p class="text-gray-600">Test your knowledge and learn more about dental health through interactive quizzes.</p>
-            </div>
-            </div>
-           
-            
-            </div>
-            </div>
-            </section>
-       
-        <section id="impact" class="py-20 bg-gray-50">
-            
-        <div class="max-w-7xl mx-auto px-4">
-            
-            <h2 class="text-3xl font-bold text-center mb-16">Our Global Impact</h2>
-            <div class="grid grid-cols-2 gap-8 mb-12">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-4">Geographic Reach</h3>
-                    <div class="map-container w-full h-96 rounded-lg overflow-hidden border-2 border-gray-200">
-                        <div id="map" style="height: 100vh; width: 100%;"></div>
-                        <script>
-                            let map;
-                    
-                            function initMap() {
-                                map = new google.maps.Map(document.getElementById("map"), {
-                                    center: { lat: -26.2708, lng: 28.1123 }, // Centered in Gauteng
-                                    zoom: 7,
-                                });
-                    
-                                // Adding markers for specific schools with actual information
-                                addMarker({ lat: -26.2041, lng: 28.0473 }, "Suncrest High School", "10 children placed on treatment", "red", "images/oral_health_program.jpg");
-                                addMarker({ lat: -25.7479, lng: 28.2293 }, "Pretoria High School", "8 children diagnosed with cavities", "blue", "https://youtu.be/_sRW0OKA8Ks");
-                                addMarker({ lat: -27.8555, lng: 26.3774 }, "Kroonstad Secondary School", "5 children treated for tooth decay", "green", "https://youtu.be/_sRW0OKA8Ks");
-                                addMarker({ lat: -29.0852, lng: 26.1596 }, "Bloemfontein High School", "12 children placed on orthodontic treatment", "yellow", "https://youtu.be/_sRW0OKA8Ks");
-                            }
-                    
-                            function addMarker(location, schoolName, visitInfo, color, link) {
-                                const marker = new google.maps.Marker({
-                                    position: location,
-                                    map: map,
-                                    icon: {
-                                        url: `http://maps.google.com/mapfiles/ms/icons/${color}-dot.png`,
-                                    },
-                                });
-                    
-                                let contentString;
-                                if (link.includes("http")) {
-                                    contentString = `<strong>${schoolName}</strong><br>${visitInfo}<br><a href="${link}" target="_blank">Click here for more information</a>`;
-                                } else {
-                                    contentString = `<strong>${schoolName}</strong><br>${visitInfo}<br><img src="${link}" alt="${schoolName}" width="200">`;
-                                }
-                    
-                                const infoWindow = new google.maps.InfoWindow({ content: contentString });
-                    
-                                marker.addListener("click", () => {
-                                    infoWindow.open(map, marker);
-                                });
-                            }
-                        </script>
-                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnu99zZwlwPmaRdFvSF82ECLPBKmwpKgg&callback=initMap"></script>
 
+        <section id="about" class="about_outer_container">
+            <div class="about_inner_container">
+                <h2 class="about_heading">About Smile Connect</h2>
+
+                <div class="AboutUs_Content">
+                    <div class="AboutUs_Text">
+                        <p class="AboutUs_Text1">SmileReach was founded in 2020 with a simple yet powerful mission: to bring quality dental care to every child, regardless of their location or economic status. Through innovative teledentistry solutions, we've been breaking down barriers that traditionally prevented access to dental healthcare.</p>
+                        <p class="AboutUs_Text2">Our program combines cutting-edge technology with compassionate care, enabling us to reach children in remote and underserved communities. We believe that every smile matters, and early dental education and intervention can significantly impact a child's overall health and confidence.</p>
+                    </div>
+
+                    <div class="AboutUs_Image_Container">
+                        <img src="images/teledentistry1.webp" alt="About SmileReach" class="AboutUs_Image">
+
+                        <div class="year_box">
+                            <p class="year_box_text">Est. 2025</p>
+                        </div><!--Doubting this part , thinking or removing it-->
 
                     </div>
                 </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-        <h3 class="text-xl font-semibold mb-4">Impact Metrics</h3>
-        <div id="impactChart" class="w-full h-96"></div>
-        </div>
-        </div>
-        <div class="grid grid-cols-4 gap-4">
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-        <div class="text-3xl font-bold text-primary mb-2">12,000+</div>
-        <div class="text-gray-600">Children Treated</div>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-        <div class="text-3xl font-bold text-primary mb-2">150+</div>
-        <div class="text-gray-600">Communities</div>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-        <div class="text-3xl font-bold text-primary mb-2">25+</div>
-        <div class="text-gray-600">Countries</div>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-        <div class="text-3xl font-bold text-primary mb-2">98%</div>
-        <div class="text-gray-600">Success Rate</div>
-        </div>
-        </div>
-        </div>
+
+            </div>
+
+            <h2 class="education_heading">Educational Resources</h2>
+
+            <div class="education_inner_container">
+
+                <div class="Video_Tutorial_container ">
+
+                    <div class="Edu_VideoTut_content">
+                        <i class="Video"></i> <!--The actual video content inseted within the div-->
+                    </div>
+                    <h3 class="Edu_VideoTut_heading">Video Tutorials</h3><!--The heading of the div-->
+                    <p class="Edu_VideoTut_desc">Learn proper brushing techniques and oral care tips through our engaging video content.</p> 
+                    <!--The description to user of what to expect when they click this section of the web-->
+
+                </div><!--The comments for the above div apply for the 2 containers below. -->
+
+                <!--Just replace the Video with Guides-->
+                <div class="Interactive_guides_container">
+
+                    <div class="Interactive_guides_content">
+                        <i class="Guides"></i>
+                    </div>
+
+                    <h3 class="Interactive_guides_heading">Interactive Guides</h3>
+                    <p class="Interactive_guides_desc">Step-by-step guides for maintaining good oral hygiene and preventing dental issues.</p>
+
+                </div>
+
+                <!--And here replace the Video with Quiz-->
+                <div class="Fun_quizzes_container">
+                    <div class="Fun_quizzes_content">
+                        <i class="Quizzes"></i>
+                    </div>
+
+                    <h3 class="Fun_quizzes_heading">Fun Quizzes</h3>
+                    <p class="Fun_quizzes_desc">Test your knowledge and learn more about dental health through interactive quizzes.</p>
+                </div>
+            </div>
         </section>
-       
+
+        <section class="global-impact">
+            <h2>Our Global Impact</h2>
         
-        <section id="outreach" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-16">Recent Outreach Activities</h2>
-            <div class="grid grid-cols-2 gap-12">
-            <div class="space-y-6">
-            <h3 class="text-2xl font-semibold">Rural Health Initiative 2025</h3>
-            <p class="text-gray-700 leading-relaxed">Our latest outreach program focused on bringing dental care to rural communities in underserved areas. Through mobile clinics and teledentistry solutions, we provided essential dental services to over 500 children in just two weeks.</p>
-            <div class="space-y-4">
-            <div class="flex items-center space-x-4">
-            <i class="ri-check-line text-green-500"></i>
-            <span>Served 15 remote communities</span>
+            <div class="impact-section">
+              <div class="card">
+                <h3>Geographic Reach</h3>
+                <div id="map" class="map"></div>
+              </div>
+        
+              <div class="card">
+                <h3>Impact Metrics</h3>
+                <canvas id="impactChart" width="300" height="300"></canvas>
+              </div>
             </div>
-            <div class="flex items-center space-x-4">
-            <i class="ri-check-line text-green-500"></i>
-            <span>Conducted 500+ dental screenings</span>
+        
+            <div class="stats">
+              <div class="stat">
+                <h2 class="count" data-target="12000">0</h2>
+                <p>Children Treated</p>
+              </div>
+              <div class="stat">
+                <h2 class="count" data-target="150">0</h2>
+                <p>Communities</p>
+              </div>
+              <div class="stat">
+                <h2 class="count" data-target="25">0</h2>
+                <p>Countries</p>
+              </div>
+              <div class="stat">
+                <h2 class="count" data-target="98">0</h2>
+                <p>Success Rate</p>
+              </div>
             </div>
-            <div class="flex items-center space-x-4">
-            <i class="ri-check-line text-green-500"></i>
-            <span>Distributed 1000+ dental care kits</span>
-            </div>
-            </div>
-            </div>
-            <div class="relative">
-            <div class="outreach-slider overflow-hidden rounded-lg">
-            <div class="slides flex transition-transform duration-500">
-            <img src="images/teledentistry3.jpg" class="w-full h-96 object-cover" alt="Outreach 1">
-            </div>
-            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-            <button class="w-3 h-3 rounded-full bg-white/50 slider-dot" data-index="0"></button>
-            <button class="w-3 h-3 rounded-full bg-white/50 slider-dot" data-index="1"></button>
-            <button class="w-3 h-3 rounded-full bg-white/50 slider-dot" data-index="2"></button>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </section>
+          </section>
+        
+          <script src="script.js"></script>
+          <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnu99zZwlwPmaRdFvSF82ECLPBKmwpKgg&callback=initMap">
+          </script>
 
-        <section id="team" class="py-20">
-            <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-16">Meet the Team</h2>
-            <div class="grid grid-cols-4 gap-8">
-            <div class="text-center">
-            <img src="https://readdy.ai/api/search-image?query=professional headshot of a middle-aged female dentist with warm smile, white coat, natural lighting&width=300&height=300&seq=11&orientation=squarish&flag=e2074b04662efffd87e38d7fd74d4152" alt="Dr. Sarah Chen" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
-            <h3 class="text-xl font-semibold">Dr. Sarah Chen</h3>
-            <p class="text-gray-600">Founder & Lead Dentist</p>
-            </div>
-            <div class="text-center">
-            <img src="https://readdy.ai/api/search-image?query=professional headshot of a male dental specialist in his 40s, confident pose, white coat&width=300&height=300&seq=12&orientation=squarish&flag=23907d2ebf72b4d24a9e5bfbc3ae9d8a" alt="Dr. Michael Rodriguez" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
-            <h3 class="text-xl font-semibold">Dr. Michael Rodriguez</h3>
-            <p class="text-gray-600">Pediatric Specialist</p>
-            </div>
-            <div class="text-center">
-            <img src="https://readdy.ai/api/search-image?query=professional headshot of a young female dental hygienist, friendly smile, white uniform&width=300&height=300&seq=13&orientation=squarish&flag=1cb5e8cbcf41fe769a068db3da667f29" alt="Emma Thompson" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
-            <h3 class="text-xl font-semibold">Emma Thompson</h3>
-            <p class="text-gray-600">Lead Dental Hygienist</p>
-            </div>
-            <div class="text-center">
-            <img src="https://readdy.ai/api/search-image?query=professional headshot of a male technology specialist in his 30s, business casual attire&width=300&height=300&seq=14&orientation=squarish&flag=97e44389c618974c6d49613cf6c2f821" alt="David Park" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
-            <h3 class="text-xl font-semibold">David Park</h3>
-            <p class="text-gray-600">Technology Director</p>
-            </div>
-            </div>
-            <div class="grid grid-cols-3 gap-8">
-            </div>
-            </div>
-            </section>
-    </main>
+        <section id="outreach" class="outreach_outer_container">
+            <div class="outreach_inner_container">
+                <h2 class="outreach_act_heading">Recent Outreach Activities</h2>
 
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid grid-cols-4 gap-8">
+                <div class="grid grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-semibold">Rural Health Initiative 2025</h3>
+                        <p class="text-gray-700 leading-relaxed">Our latest outreach program focused on bringing dental care to rural communities in underserved areas. Through mobile clinics and teledentistry solutions, we provided essential dental services to over 500 children in just two weeks.</p>
+
+                    </div>
+                    
+                    <div class="relative">
+                        <div class="outreach-slider overflow-hidden rounded-lg">
+                        <!--Container for final image slideshow in the last section just before the footer-->
+
+                            <div class="slides flex transition-transform duration-500">
+                                <img src="images/teledentistry3.jpg" class="outreach_img" alt="Outreach 1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section id="team" class="team_outer_container">
+        <div class="team_inner_container">
+            <h2 class="team_heading">Meet the Team</h2>
+            <div class="team_content">
+
+                <div class="text-center">
+                    <img src="https://readdy.ai/api/search-image?query=professional headshot of a middle-aged female dentist with warm smile, white coat, natural lighting&width=300&height=300&seq=11&orientation=squarish&flag=e2074b04662efffd87e38d7fd74d4152" alt="Dr. Sarah Chen" class="doctor_img">
+                    <h3 class="teamMember_name">Dr. Sarah Chen</h3>
+                    <p class="teamMember_role">Founder & Lead Dentist</p>
+                </div>
+
+                <div class="text-center">
+                    <img src="https://readdy.ai/api/search-image?query=professional headshot of a male dental specialist in his 40s, confident pose, white coat&width=300&height=300&seq=12&orientation=squarish&flag=23907d2ebf72b4d24a9e5bfbc3ae9d8a" alt="Dr. Michael Rodriguez" class="doctor_img">
+                    <h3 class="teamMember_name">Dr. Michael Rodriguez</h3>
+                    <p class="teamMember_role">Pediatric Specialist</p>
+                </div>
+
+                <div class="text-center">
+                    <img src="https://readdy.ai/api/search-image?query=professional headshot of a young female dental hygienist, friendly smile, white uniform&width=300&height=300&seq=13&orientation=squarish&flag=1cb5e8cbcf41fe769a068db3da667f29" alt="Emma Thompson" class="doctor_img">
+                    <h3 class="teamMember_name">Emma Thompson</h3>
+                    <p class="teamMember_role">Lead Dental Hygienist</p>
+                </div>
+
+                <div class="text-center">
+                    <img src="https://readdy.ai/api/search-image?query=professional headshot of a male technology specialist in his 30s, business casual attire&width=300&height=300&seq=14&orientation=squarish&flag=97e44389c618974c6d49613cf6c2f821" alt="David Park" class="doctor_img">
+                    <h3 class="teamMember_name">David Park</h3>
+                    <p class="teamMember_role">Technology Director</p>
+                </div>
+            </div>
+            
+            <div class="end_contact"></div>
+        </div>
+    </section>
+</main>
+
+    <footer class="footer_outer_container">
+        <div class="footer_inner_container">
+            <div class="footer_content">
                 <div>
-                    <span class="text-2xl font-['Pacifico'] text-white mb-4 block">logo</span>
-                    <p class="text-gray-400">Bringing smiles to children worldwide through innovative teledentistry solutions.</p>
+                    <span class="logo">logo</span>
+                    <p class="slogan">Bringing smiles to children worldwide through innovative teledentistry solutions.</p>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white cursor-pointer">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white cursor-pointer">Services</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white cursor-pointer">Education</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white cursor-pointer">Impact</a></li>
+                    <h3 class="link_heading">Quick Links</h3>
+                    <ul class="link_list">
+                        <li><a href="#" class="footer_link">About Us</a></li>
+                        <li><a href="#" class="footer_link">Services</a></li>
+                        <li><a href="#" class="footer_link">Education</a></li>
+                        <li><a href="#" class="footer_link">Impact</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
-                    <ul class="space-y-2">
-                        <li class="text-gray-400">contact@smilereach.org</li>
-                        <li class="text-gray-400">+1 (555) 123-4567</li>
-                        <li class="text-gray-400">123 Dental Street, Suite 100</li>
-                        <li class="text-gray-400">New York, NY 10001</li>
+                    <h3 class="contact_heading">Contact</h3>
+                    <ul class="contact_list"> 
+                        <li class="contact"><a href="mailto:masego454@gmail.com" class="contact">masego454@gmail.com</a></li>
+                        <li class="contact"><a href="tel:+27678352384" class="contact">+27 67 835 2384</a></li>
+                        <li class="contact">123 Dental Street, Suite 100</li>
+                        <li class="contact">New York, NY 10001</li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 cursor-pointer">
-                            <i class="ri-facebook-fill text-white"></i>
+                    <h3 class="follow_us_heading">Follow Us</h3>
+
+                    <div class="follow_us_content">
+                        <a href="#" class="social_app_logo">
+                            <i class="facebook"></i>
                         </a>
                         
-                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 cursor-pointer">
-                            <i class="ri-twitter-fill text-white"></i>
+                        <a href="#" class="social_class">
+                            <i class="twitter"></i>
                         </a>
                         
-                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 cursor-pointer">
-                            <i class="ri-instagram-fill text-white"></i>
+                        <a href="#" class="social_class">
+                            <i class="instagram"></i>
                         </a>
                         
-                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 cursor-pointer">
-                            <i class="ri-linkedin-fill text-white"></i>
+                        <a href="#" class="social_class">
+                            <i class="linkedin"></i>
                         </a>
+
+                        
                     
                     </div>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+            <div class="rights_reserved">
                 <p>&copy; 2025 SmileReach. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    
       
 
 </body>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Education Resources</title>
+    <script src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js"></script>
+    <link rel="stylesheet" href="screen2.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">ToothEducating</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#" class="active">Education</a></li>
+                    <li><a href="#">Impact</a></li>
+                    <li><a href="#">Stories</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Educational Resources Overview Section -->
+        <section id="resources-overview">
+            <h1 class="page-title">Educational Resources</h1>
+            
+            <div class="features-grid">
+                <div class="feature-card" id="video-tutorials-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3 class="feature-title">Videos</h3>
+                    <p class="feature-text">Regular check-ups, cleanings, and preventative care to maintain your oral health and prevent future problems.</p>
+                    <a href="#" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" id="3D-models-card">
+                        <i class="fas fa-smile"></i>
+                        
+                    </div>
+                    <h3 class="feature-title">Dental 3D interactive Models</h3>
+                    <p class="feature-text">Enhance your smile with teeth whitening, veneers, bonding, and other aesthetic procedures.</p>
+                    <a href="#" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="feature-title">Fun Quizzes</h3>
+                    <p class="feature-text">Repair damaged teeth with fillings, crowns, bridges, and implants to restore function and appearance.</p>
+                    <a href="#" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Library Section (Initially Hidden) -->
+        <section id="video-library">
+            <a href="#" class="back-link" id="back-to-resources">
+                <i class="fas fa-arrow-left"></i> Back to Education
+            </a>
+
+            <h1 class="page-title">Master Your Oral Care Routine</h1>
+            <p class="page-description">Watch expert-led video tutorials to improve your dental hygiene and maintain a healthy smile for life.</p>
+
+            <div class="filter-tabs">
+                <div class="filter-tab active" data-filter="all">All</div>
+                <div class="filter-tab" data-filter="brushing">Brushing</div>
+                <div class="filter-tab" data-filter="flossing">Flossing</div>
+                <div class="filter-tab" data-filter="kids">Kids</div>
+                <div class="filter-tab" data-filter="seniors">Seniors</div>
+            </div>
+
+            <div class="video-grid">
+                <div class="video-card" data-category="brushing">
+                    <div class="video-thumbnail">
+                        <img src="/images/mmm1.jpg" alt="Proper Brushing Technique">
+                        <div class="video-duration">2:35</div>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">Proper Brushing Technique for Adults</h3>
+                        <p class="video-description">The correct way to brush your teeth with Dr. Emily Johnson. This comprehensive guide covers angle, pressure, and duration for proper cleanliness.</p>
+                        <div class="video-meta">
+                            <div class="video-views">
+                                <i class="fas fa-eye"></i> 27,548 views
+                            </div>
+                            <div class="video-date">
+                                <i class="fas fa-calendar"></i> Apr 7, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card" data-category="flossing">
+                    <div class="video-thumbnail">
+                        <img src="/images/mmm7.jpeg" alt="Flossing techniques">
+                        <div class="video-duration">4:47</div>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">Flossing Techniques That Actually Work</h3>
+                        <p class="video-description">Master the art of flossing with Dr. Michael Chen. Discover how to reach difficult areas and prevent gum damage while thoroughly cleaning between teeth.</p>
+                        <div class="video-meta">
+                            <div class="video-views">
+                                <i class="fas fa-eye"></i> 8,971 views
+                            </div>
+                            <div class="video-date">
+                                <i class="fas fa-calendar"></i> Jan 18, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card" data-category="kids">
+                    <div class="video-thumbnail">
+                        <img src="/images/mmm6.jpeg" alt="Making Brushing Fun for Kids">
+                        <div class="video-duration">3:42</div>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">Making Brushing Fun for Kids</h3>
+                        <p class="video-description">Dr. Sarah Williams shares creative ways to help children establish healthy brushing habits. Learn engaging games and techniques that transform brushing from a chore to fun.</p>
+                        <div class="video-meta">
+                            <div class="video-views">
+                                <i class="fas fa-eye"></i> 15,220 views
+                            </div>
+                            <div class="video-date">
+                                <i class="fas fa-calendar"></i> Apr 5, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card" data-category="seniors">
+                    <div class="video-thumbnail">
+                        <img src="/images/mmm4.jpg" alt="Dental Care for Seniors">
+                        <div class="video-duration">5:18</div>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">Dental Care for Seniors</h3>
+                        <p class="video-description">Dr. Robert Thompson covers special considerations for oral health in older adults. Learn about caring for sensitive gums, dentures, and age-related dental changes.</p>
+                        <div class="video-meta">
+                            <div class="video-views">
+                                <i class="fas fa-eye"></i> 10,304 views
+                            </div>
+                            <div class="video-date">
+                                <i class="fas fa-calendar"></i> Mar 22, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card" data-category="kids">
+                    <div class="video-thumbnail">
+                        <img src="/images/mmm11.avif" alt="Electric vs Manual Toothbrushes">
+                        <div class="video-duration">6:23</div>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">Electric vs. Manual Toothbrushes</h3>
+                        <p class="video-description">Dr. Jessica Martinez compares different toothbrush types and techniques, learn which option might be best for your specific needs and preferences.</p>
+                        <div class="video-meta">
+                            <div class="video-views">
+                                <i class="fas fa-eye"></i> 13,456 views
+                            </div>
+                            <div class="video-date">
+                                <i class="fas fa-calendar"></i> Apr 9, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card" data-category="kids">
+                    <div class="video-thumbnail">
+                        <img src="/images/teledentistry3.jpg" alt="Caring for Dental Appliances">
+                        <div class="video-duration">4:56</div>
+                    </div>
+                    <div class="video-content">
+                        <h3 class="video-title">Caring for Dental Appliances</h3>
+                        <p class="video-description">Discover best practices how to properly clean and maintain retainers, night guards and other dental appliances for optimal longevity and hygiene.</p>
+                        <div class="video-meta">
+                            <div class="video-views">
+                                <i class="fas fa-eye"></i> 7,823 views
+                            </div>
+                            <div class="video-date">
+                                <i class="fas fa-calendar"></i> Jan 30, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <div class="pagination-item"><i class="fas fa-chevron-left"></i></div>
+                <div class="pagination-item active">1</div>
+                <div class="pagination-item">2</div>
+                <div class="pagination-item">3</div>
+                <div class="pagination-item">...</div>
+                <div class="pagination-item">8</div>
+                <div class="pagination-item"><i class="fas fa-chevron-right"></i></div>
+            </div>
+        </section>
+    </div>
+    
+    
+    <script src="screen2.js"></script>
+</body>
+</html>
